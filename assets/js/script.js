@@ -1,5 +1,10 @@
 console.log("started");
 
+function setHash(hash) {
+    event.preventDefault();
+    history.pushState(null, null, "#" + hash);
+}
+
 
 $(document).ready(function () {
     $(".owl-carousel").owlCarousel({
@@ -34,10 +39,11 @@ var windowWidth = window.innerWidth;
 
 if (windowWidth > 1024) {
     for (i = 0; i < topMenu.length; i++) {
-        topMenu[i].addEventListener('click', function () {
-
+        topMenu[i].addEventListener('click', function (event) {
+           
             var id = this.getAttribute('href');
             var cardItem = document.getElementById(id.substring(1));
+            var h = parseFloat(cardItem.offsetTop);
 
 
             var menuItem = this.closest('li');
@@ -68,6 +74,13 @@ if (windowWidth > 1024) {
                 cardItem.classList.remove('hidden');
                 cardItem.classList.add('active');
             }
+
+
+            /* Tablet*/
+
+            /* Mobile */
+
+
         });
     }
 
