@@ -29,7 +29,9 @@ var animation_in = container_wrap.dataset.animation_in;
 var animation_out = container_wrap.dataset.animation_out;
 const topMenu = document.getElementById('top-menu').getElementsByTagName('a');
 var menuItems = document.querySelectorAll('.top-menu li');
-var windowWidth = window.screen.width;
+var windowWidth = window.innerWidth;
+
+
 if (windowWidth > 1024) {
     for (i = 0; i < topMenu.length; i++) {
         topMenu[i].addEventListener('click', function () {

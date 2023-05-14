@@ -1293,14 +1293,20 @@ textarea:focus {
         height: auto;
         max-height: max-content;
         margin: 0;
+        padding-top: 118px;
 
     }
 
     .header {
+        position: fixed;
         float: none;
         width: 100%;
         display: block;
         margin-right: 0;
+        z-index: 11;
+        margin-top: 0;
+        height: 64px;
+        top: 0;
 
         .profile {
             display: block;
