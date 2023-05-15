@@ -1040,8 +1040,14 @@ textarea:focus {
     z-index: 10;
     float: none;
   }
-  .card-started .links {
-    position: relative;
+  .card-started .profile {
+    min-height: calc(100vh - 102px);
+  }
+  .card-started .profile .title {
+    margin-top: 90%;
+  }
+  .card-started .image {
+    height: 50%;
   }
   .card-inner {
     position: relative;
@@ -1082,6 +1088,15 @@ textarea:focus {
     z-index: 10;
     float: none;
     margin-top: 20px;
+  }
+  .card-started .profile {
+    min-height: calc(100vh - 102px);
+  }
+  .card-started .profile .title {
+    margin-top: 70%;
+  }
+  .card-started .image {
+    height: 70%;
   }
   .card-started .links {
     position: relative;

@@ -1343,8 +1343,17 @@ textarea:focus {
         z-index: 10;
         float: none;
 
-        .links {
-            position: relative;
+        .profile {
+            min-height: calc(100vh - 102px);
+
+            .title {
+                margin-top: 90%;
+            }
+        }
+
+        .image {
+            height: 50%;
+
         }
 
     }
@@ -1408,7 +1417,19 @@ textarea:focus {
         margin-top: 20px;
 
 
-        .links {
+        .profile {
+            min-height: calc(100vh - 102px);
+
+            .title {
+                margin-top: 70%;
+            }
+        }
+
+        .image {
+            height: 70%;
+
+        }
+        .links{
             position: relative;
         }
 
