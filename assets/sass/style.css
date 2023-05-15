@@ -1044,10 +1044,11 @@ textarea:focus {
     min-height: calc(100vh - 118px);
   }
   .card-started .profile .title {
-    margin-top: 90%;
+    margin-top: 100%;
   }
   .card-started .image {
-    height: 50%;
+    height: 55%;
+    background-position: center center;
   }
   .card-inner {
     position: relative;

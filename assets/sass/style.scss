@@ -1347,12 +1347,13 @@ textarea:focus {
             min-height: calc(100vh - 118px);
 
             .title {
-                margin-top: 90%;
+                margin-top: 100%;
             }
         }
 
         .image {
-            height: 50%;
+            height: 55%;
+            background-position: center center;
 
         }
 
