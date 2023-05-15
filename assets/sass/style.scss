@@ -1344,10 +1344,10 @@ textarea:focus {
         float: none;
 
         .profile {
-            min-height: calc(100vh - 118px);
+           
 
             .title {
-                margin-top: 100%;
+                margin-top: 90%;
             }
         }
 
@@ -1355,6 +1355,10 @@ textarea:focus {
             height: 55%;
             background-position: center center;
 
+        }
+
+        .links{
+            position: relative;
         }
 
     }

@@ -1040,15 +1040,15 @@ textarea:focus {
     z-index: 10;
     float: none;
   }
-  .card-started .profile {
-    min-height: calc(100vh - 118px);
-  }
   .card-started .profile .title {
-    margin-top: 100%;
+    margin-top: 90%;
   }
   .card-started .image {
     height: 55%;
     background-position: center center;
+  }
+  .card-started .links {
+    position: relative;
   }
   .card-inner {
     position: relative;
