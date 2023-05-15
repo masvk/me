@@ -86,10 +86,36 @@ if (windowWidth > 1024) {
 
 }
 
+window.addEventListener('scroll', function(){
+    if(window.innerWidth < 993){
+        var scrollPos= this.scrollY;
+        var menu = document.querySelectorAll(".top-menu ul li a");
+        menu.forEach((element) =>{
+                var currentLink = element;
+                var attr = currentLink.getAttribute('href');
+                var id= document.getElementById(attr.substring(1));
+                if(window.innerWidth <=786){
+                    if((id.offsetTop - 118) <= scrollPos){
+                        document.querySelectorAll(".top-menu ul li").forEach((menuElement) =>{
+                            menuElement.classList.remove('active');
+                            currentLink.closest('li').classList.add('active')
+                        })
+                    }
+
+                }else{
+                    if((id.offsetTop) <= scrollPos){
+                        document.querySelectorAll(".top-menu ul li").forEach((menuElement) =>{
+                            menuElement.classList.remove('active');
+                            currentLink.closest('li').classList.add('active')
+                        })
+                    }
+                    
+                }
 
 
-
-
+        })
+    }
+});
 
 /* 
    Initialize portfolio
