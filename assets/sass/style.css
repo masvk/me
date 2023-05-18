@@ -182,13 +182,14 @@ html {
   transform: rotate(-8deg);
 }
 .card-started .title {
-  margin-top: 90%;
+  margin-top: 75%;
   font-size: 25px;
   position: relative;
 }
 .card-started .social {
   position: relative;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 .card-started .social a {
   color: black;
@@ -216,6 +217,7 @@ html {
   background: radial-gradient(ellipse at center, #ddd 0, rgba(255, 255, 255, 0) 70%);
 }
 .card-started .link {
+  position: relative;
   text-decoration: none;
   display: block;
   float: none;
@@ -224,6 +226,9 @@ html {
   width: 50%;
   text-align: center;
   color: black;
+}
+.card-started .link i {
+  padding: 0 10px;
 }
 .card-started .link:hover {
   color: #78cc6d;
@@ -387,7 +392,8 @@ html {
   display: inline-block;
   position: relative;
   vertical-align: bottom;
-  font-size: 20px;
+  font-size: 18px;
+  top: 7px;
 }
 .price .price-items .feature-list {
   margin-top: 30px;
@@ -791,6 +797,9 @@ html {
 .content.works .desc a:hover {
   color: #78cc6d;
 }
+.content.works .grid-item.col {
+  padding-bottom: 0;
+}
 .content.works .grid-item:hover .box-item .info {
   opacity: 1;
 }
@@ -839,19 +848,47 @@ input {
 }
 
 input:focus {
-  outline: 2px solid #78cc6d;
+  border: 2px solid #78cc6d;
+  outline: none;
 }
 
 textarea {
   padding: 15px;
   border: 2px solid #eeeeee;
   width: 100%;
-  height: 50px;
+  height: 70px;
   resize: none;
 }
 
 textarea:focus {
-  outline: 2px solid #78cc6d;
+  outline: none;
+  border: 2px solid #78cc6d;
+}
+
+input.error {
+  border: 2px solid red;
+}
+
+textarea.error {
+  border: 2px solid red;
+}
+
+.button {
+  width: 50%;
+  border: 2px solid #eeeeee;
+  padding: 10px 20px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.button:hover {
+  color: #ffffff;
+  background-color: #78cc6d;
+}
+
+.error {
+  font-size: 15px;
+  margin-top: 5px;
 }
 
 .border-line-v:before {
@@ -872,6 +909,25 @@ textarea:focus {
   height: 1px;
   width: 100%;
   background: radial-gradient(ellipse at center, #ddd 0, rgba(255, 255, 255, 0) 70%);
+}
+
+footer {
+  display: none;
+  background: #78cc6d;
+  padding: 10px 20px;
+  font-size: 15px;
+}
+footer .container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+footer p {
+  color: white;
+}
+@media only screen and (max-width: 992px) {
+  footer {
+    display: block;
+  }
 }
 
 /* total width */

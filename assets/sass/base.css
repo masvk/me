@@ -29,6 +29,22 @@ body {
   width: 49%;
 }
 
+.align-left {
+  text-align: left;
+}
+
+label {
+  display: inline-block;
+}
+
+input.error, textarea.error {
+  color: black;
+}
+
+.error {
+  color: red;
+}
+
 @media only screen and (max-width: 768px) {
   .col-sm-12 {
     width: 100%;

@@ -104,10 +104,12 @@ html {
         }
 
         .link {
+
             display: block;
             font-size: 10px;
             line-height: 13px;
         }
+
     }
 }
 
@@ -206,7 +208,7 @@ html {
     }
 
     .title {
-        margin-top: 90%;
+        margin-top: 75%;
         font-size: 25px;
         position: relative;
     }
@@ -215,6 +217,7 @@ html {
     .social {
         position: relative;
         margin-top: 20px;
+        margin-bottom: 20px;
 
 
         a {
@@ -249,6 +252,7 @@ html {
     }
 
     .link {
+        position: relative;
         text-decoration: none;
         display: block;
         float: none;
@@ -257,6 +261,11 @@ html {
         width: 50%;
         text-align: center;
         color: black;
+
+        i {
+            padding: 0 10px;
+        }
+
     }
 
     .link:hover {
@@ -465,7 +474,8 @@ html {
                 display: inline-block;
                 position: relative;
                 vertical-align: bottom;
-                font-size: 20px;
+                font-size: 18px;
+                top: 7px;
 
             }
 
@@ -964,6 +974,7 @@ html {
         }
 
 
+
     }
 
     .grid-items.border-line-v:before {
@@ -988,6 +999,10 @@ html {
             color: #78cc6d;
         }
 
+    }
+
+    .grid-item.col {
+        padding-bottom: 0;
     }
 
     .grid-item:hover {
@@ -1063,24 +1078,57 @@ input {
 }
 
 input:focus {
-    outline: 2px solid #78cc6d;
+    border: 2px solid #78cc6d;
+    outline: none;
 
 }
 
 textarea {
     padding: 15px;
     border: 2px solid #eeeeee;
+    
     width: 100%;
-    height: 50px;
+    height: 70px;
     resize: none;
 }
 
 textarea:focus {
-    outline: 2px solid #78cc6d;
+    outline: none;
+    border: 2px solid #78cc6d;
 
 
 }
 
+input.error {
+    border: 2px solid red;
+
+}
+
+textarea.error {
+    border: 2px solid red;
+
+}
+
+
+
+
+.button {
+    width: 50%;
+    border: 2px solid #eeeeee;
+    padding: 10px 20px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: #ffffff;
+    background-color: #78cc6d;
+}
+
+.error {
+    font-size: 15px;
+    margin-top: 5px;
+}
 
 
 .border-line-v:before {
@@ -1101,6 +1149,29 @@ textarea:focus {
     height: 1px;
     width: 100%;
     background: radial-gradient(ellipse at center, #ddd 0, rgba(255, 255, 255, 0) 70%);
+}
+
+
+footer{
+    display: none;
+    background: #78cc6d;
+    padding: 10px 20px;
+    font-size: 15px;
+
+    .container{
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    
+    p{
+       
+        color: white;
+    }
+
+    @media only screen and (max-width:992px) {
+        display: block;
+        
+    }
 }
 
 
@@ -1344,7 +1415,7 @@ textarea:focus {
         float: none;
 
         .profile {
-           
+
 
             .title {
                 margin-top: 90%;
@@ -1357,7 +1428,7 @@ textarea:focus {
 
         }
 
-        .links{
+        .links {
             position: relative;
         }
 
@@ -1434,7 +1505,8 @@ textarea:focus {
             height: 70%;
 
         }
-        .links{
+
+        .links {
             position: relative;
         }
 

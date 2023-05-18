@@ -92,10 +92,14 @@
                     </div>
                     <div class="links">
                         <a href="/" class="link">
+
                             <span>Download CV</span>
+                            <i class="fa-solid fa-download" style="color: #78cc6d;"></i>
                         </a>
                         <a href="/" class="link">
+
                             <span>Contact Me</span>
+                            <i class="fa-solid fa-brands fa-whatsapp" style="color: #78cc6d;"></i>
                         </a>
                     </div>
                 </div>
@@ -199,7 +203,8 @@
 
                                     <div class="name"><span>Hosting or App publishing</span></div>
                                     <div class="desc">
-                                        <p>Help to publish your app on playstore or appstore Also host your website on our platform with high securely 
+                                        <p>Help to publish your app on playstore or appstore Also host your website on
+                                            our platform with high securely
                                         </p>
                                     </div>
                                 </div>
@@ -640,30 +645,12 @@
 
                         <!--Contents-->
                         <div class="row grid-items border-line-v">
-                            <div class="col col-sm-12 col-lg-6 grid-item app">
-                                <div class="box-item">
-                                    <div class="image">
-                                        <a href="assets/images/work1.jpg" class="has-popup-image">
-                                            <img src="assets/images/work1.jpg" alt="">
-                                        </a>
-                                    </div>
 
-                                    <div class="info">
-                                        <i class="icon fa-regular fa-globe"></i>
-
-                                    </div>
-                                </div>
-                                <div class="desc">
-                                    <a href="assets/images/work1.jpg">My portfolio</a>
-                                    <div class="category">Website</div>
-                                </div>
-
-                            </div>
                             <div class="col col-sm-12 col-lg-6 grid-item app">
                                 <div class="box-item">
                                     <div class="image">
                                         <a href="assets/images/work2.jpg" class="has-popup-image">
-                                            <img src="assets/images/work2.jpg" alt="">
+                                            <img src="assets/images/pepp.png" alt="">
                                         </a>
                                     </div>
 
@@ -672,7 +659,7 @@
                                     </div>
                                 </div>
                                 <div class="desc">
-                                    <a href="assets/images/work2.jpg">Pepp Learning</a>
+                                    <a href="assets/images/pepp.png">Pepp Learning</a>
                                     <div class="category">App</div>
                                 </div>
 
@@ -680,8 +667,8 @@
                             <div class="col col-sm-12 col-lg-6 grid-item website">
                                 <div class="box-item">
                                     <div class="image">
-                                        <a href="assets/images/work3.jpg" class="has-popup-image">
-                                            <img src="assets/images/work3.jpg" alt="">
+                                        <a href="assets/images/idam.png" class="has-popup-image">
+                                            <img src="assets/images/idam.png" alt="">
                                         </a>
                                     </div>
 
@@ -690,7 +677,7 @@
                                     </div>
                                 </div>
                                 <div class="desc">
-                                    <a href="assets/images/work3.jpg">Idam Magazine</a>
+                                    <a href="assets/images/idam.png">Idam Magazine</a>
                                     <div class="category">App</div>
                                 </div>
 
@@ -743,22 +730,31 @@
                         <div class="row">
                             <div class="col col-12">
                                 <div class="contact-form">
-                                    <form>
+                                    <form name="myform" methode="post" onsubmit="return validateForm()">
                                         <div class="row">
-                                            <div class="col col col-sm-12 col-md-12 col-lg-12">
+                                            <div class="col col col-sm-12 col-md-12 col-lg-6">
                                                 <div class="group-val">
-                                                    <input type="text" name="name" placeholder="Full Name">
+                                                    <input type="text" name="name" placeholder="Full Name"
+                                                        onchange="changeFeiled(event)">
+                                                    <label id="name-error" class="error" for="name"></label>
                                                 </div>
                                             </div>
-                                            <div class="col col-sm-12 col-md-12 col-lg-12">
+                                            <div class="col col-sm-12 col-md-12 col-lg-6">
                                                 <div class="group-val">
-                                                    <input type="text" name="email" placeholder="Email Address">
+                                                    <input type="text" name="email" placeholder="Email Address"
+                                                        onchange="changeFeiled(event)">
+                                                    <label id="email-error" class="error" for="email"></label>
                                                 </div>
                                             </div>
                                             <div class="col col-12">
                                                 <div class="group-val">
-                                                    <textarea name="message" placeholder="Message"></textarea>
+                                                    <textarea name="message" placeholder="Message"
+                                                        onchange="changeFeiled(event)"></textarea>
+                                                    <label id="message-error" class="error" for="message"></label>
                                                 </div>
+                                            </div>
+                                            <div class="col col-12">
+                                                <input class="button" type="submit">
                                             </div>
 
                                     </form>
@@ -767,6 +763,7 @@
                         </div>
 
                     </div>
+
 
 
                 </div>
@@ -783,6 +780,11 @@
     </div>
 
     </div>
+    <footer>
+        <div class="container">
+            <p>Copyright © Infinite Lab Developed by Muhammed Anas</p>
+        </div>
+    </footer>
 
 
     <script src="assets/js/jquery.min.js"></script>
